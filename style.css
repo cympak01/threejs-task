@@ -1,0 +1,83 @@
+/* Reset 2.0 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* App styles */
+html {
+	font-size: 10px;
+}
+
+canvas {
+	width: 100%;
+	height: 100%
+}
+
+#creation-area {
+	position: absolute;
+	left: 2.5rem;
+	top: 2.5rem;
+}
+
+#created-shapes {
+	position: absolute;
+	left: 2.5rem;
+	bottom: 2.5rem;
+	width: 30rem;
+	height: 15rem;
+	overflow-y: auto;
+	padding: 2.5rem;
+	background: white;
+	border: 1px solid #f5f6f7;
+	border-radius: 4px;
+	font-size: 1.8rem;
+}
+
+#created-shapes li:not(:last-of-type) {
+	margin-bottom: 1rem;
+}
+
+#created-shapes button {
+	margin-left: 2rem;
+}
